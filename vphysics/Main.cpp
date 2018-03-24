@@ -2,7 +2,7 @@
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR lpCmdLine, int nCmdShow)
 {
-	WindowClass WndClass(L"vPhysics", 1024, 768);
+	WindowClass WndClass(L"vPhysics", 1600, 900);
 	if (!WndClass.initWindow(hInstance, lpCmdLine, nCmdShow))
 		return 1;
 	DXClass dx(WndClass, 3);

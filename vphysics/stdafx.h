@@ -18,9 +18,6 @@ language='*'\"")
 #include <Windows.h>
 #include <string>
 #include <vector>
-#include <utility>
-
-
 
 #ifdef _UNICODE
 typedef std::wstring tstring;
