@@ -1,10 +1,15 @@
 #pragma once
 #define SAFE_RELEASE(p) { if ( (p != nullptr) ) { (p)->Release(); (p) = 0; } }
 
+
 #pragma comment(linker,"\"/manifestdependency:type='win32' \
 name='Microsoft.Windows.Common-Controls' version='6.0.0.0' \
 processorArchitecture='amd64' publicKeyToken='6595b64144ccf1df' \
 language='*'\"")
+
+#pragma comment(lib, "d3d12.lib")
+#pragma comment(lib, "dxgi.lib")
+#pragma comment(lib, "d3dcompiler.lib")
 
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers.
